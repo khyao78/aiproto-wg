@@ -22,11 +22,18 @@ The scope of the working group is agent-to-agent and agent-to-tools communicatio
 
 The working group will produce the following standards track and informational documents:
 
-- An AI Agent session protocol for creation and maintenance of long-lived sessions between AI agents, or between AI agents and tools. These sessions allow for the bidirectional exchange of data, incuding model context, tool call results, and chat messages.
+## AI Agent Session Protocol (Standards Track)
 
-This protocol will facilitate highly scalable and reliable session management, able to survive network and server failures while supporting gracefully recovery. It is capable of concurrently exchanging real-time data (such as voice), semi-real-time data like chat, and non-real-time data like tool call inputs and outputs in the sessions.
+A standards-track protocoll for creation and maintenance of long-lived sessions between AI agents, or between AI agents and tools. These sessions allow for the bidirectional exchange of data, incuding model context, tool call results, and chat messages.
 
-This protocol is a expected to be a foundational building block on top of which additional protocols can be built. It is anticipated that the AI Agent session protocol will utilize modern IETF application transfer protocols, such as webtransport or MOQ, based on the anticipated use cases. The protocol must also be usable by other application layer protocols with the appropriate layering and extension points enabling its adoption by any application. Examples of protocols that can utilize this include the existing defacto agent communication protocols such as the MCP and A2A protocols being worked on by the Linux Foundation. 
+The session protocol will:
+
+* Provide timed (short or long-lived) session management, enabling the establishment, update, context handling, and termination of the services of interacting agents and tools.
+* Facilitate highly scalable and reliable session management, capable of surviving network and server failures while supporting graceful recovery.
+* Support concurrent exchange of real-time data (such as voice and video), semi-real-time data (such as chat), and non-real-time data (such as tool call inputs and outputs).
+* Supports point-to-point, point-to-multipoint and group communication topologies.
+
+This protocol is a expected to be a foundational building block on top of which additional protocols can be built. It is anticipated that the AI Agent session protocol will utilize modern IETF application transfer protocols, such as QUIC, webtransport, WebRTC or MOQ, based on the anticipated use cases. The protocol must also be usable by other application layer protocols with the appropriate layering and extension points enabling its adoption by any application. Examples of protocols that can utilize this include the existing defacto agent communication protocols such as the MCP and A2A protocols being worked on by the Linux Foundation.
 
 
 - A protocol that allows an AI Agent to obtain and exchange authorization tokens with fine-grained, behavior-driven scopes bound to the specific operations that the AI Agent is permitted to perform on behalf of the user. Unlike traditional OAuth scopes which enumerate static resource permissions, agent authorization must account for dynamic behavioral boundaries, including conditional and context-dependent privileges that may vary across interactions.
