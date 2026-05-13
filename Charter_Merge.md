@@ -67,7 +67,13 @@ Foundational work will be documented through a set of informational Internet-Dra
 
 # Coordination
 
-This working group is expected to closely coordinate with other related IETF working groups, such as oauth, webbotauth, wimse, webtrans, moq, quic, and tsvwg on common topics. The group is also expected to maintain close communication with open-source projects running under the Linux Foundation.
+This working group is expected to closely coordinate with other related IETF working groups:
+
+* **Security:** Web Authorization Protocol (OAuth), webbotauth, WIMSE — on identity, authorization, and security considerations.
+* **Transport:** WebTransport, MoQ, QUIC, TSVWG — on data transport and session management.
+* **Discovery and Operations:** INT area, OPS area — on agent discovery and operational considerations.
+
+If the working group needs any changes to or extensions of protocols specified by other working groups, those issues will be raised with the relevant working groups for decisions on how best to handle them. The group is also expected to maintain close communication with open-source projects running under the Linux Foundation.
 
 
 # Out of Scope
