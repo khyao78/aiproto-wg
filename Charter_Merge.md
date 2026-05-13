@@ -43,15 +43,25 @@ Any extensions to OAuth protocol mechanisms required to support agent authorizat
 
 - A mechanism for enabling human users to confirm operations invoked by AI agents acting on their behalf. This confirmation operation is performed by the agent orchestration layer of the AI Agent and therefore protects against hallucination and unintended actions. It is capable of working across multiple use cases, including a single AI Agent, or when using multiple AI Agents connected by the Agent-to-Agent protocol. It can be used to confirm any kind of operation, which includes invoking a REST API, calling a tool via MCP, or transferring to another AI Agent. It must provide cryptographic attestation of what the user has confirmed, enabling non-repudiation and auditable evidence trails. It might be simply a feature of the protocol defined in 2.
 
-## AI Agent Protocol Framework (Informational)
+## AI Agent Protocol Framework (Standards Track)
 
-Foundational work will be documented through a set of one or more informational Internet-Drafts. These will outline the functional blocks, their relationships, and mechanisms for structured, semi-structured, and multi-modal information exchange. These include:
+A standards-track framework document that identifies the key building blocks and defines the protocol suite for interoperable agent-to-agent and agent-to-tool communications. The document provides an architectural overview and highlights areas for subsequent protocol specification work.
 
-    Common use cases focused on Agent-to-agent and Agent-to-tool communications in order to verify suitability of the protocols developed.
+This is an evolving work item that can proceed in parallel with the development of specific protocol deliverables associated with the identified architectural blocks. It will iteratively integrate both existing and currently missing protocol building blocks in successive steps, until all core modules are fully incorporated.
 
-    Gap analysis and requirements based on the examination of existing de facto protocols implemented in open-source projects.
+The framework will:
 
-    Protocol binding requirements specifying how agent protocols map onto shared transport infrastructure, including namespace conventions enabling multiple protocols (A2A, MCP, etc.) to coexist, and backward compatibility considerations for existing deployments.
+* Enable AI Agents to select and collaborate with other AI Agents on the Internet or intranet, deployed in various interconnected domains and ecosystems, to execute simple or complex tasks.
+* Allow multi-modal collaboration using varied data formats such as text, images, video, audio, and structured data with exchange of multi-modal contexts.
+* Describe the functional blocks, their relationships, and the mechanisms for structured, semi-structured, and multi-modal information exchange to support collaborative tasks across domains.
+* Identify the protocol suite covering session management, transport, security, and identity building blocks.
+
+## Use Cases, Gap Analysis, and Requirements (Informational)
+
+Foundational work will be documented through a set of informational Internet-Drafts covering:
+
+* **Use cases** focused on Agent-to-agent and Agent-to-tool communications, used to verify the suitability of the protocols developed.
+* **Gap analysis and requirements** based on examination of existing de facto protocols implemented in open-source projects, from which necessary protocol requirements are derived.
 
 # Coordination
 
