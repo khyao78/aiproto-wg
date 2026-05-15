@@ -16,8 +16,6 @@ There are several considerations that are unique to AI Agent applications that n
 
 - To protect data exchanged between AI Agents (and between AI Agents and tools) over potentially untrusted networks, particularly when handling sensitive information (such as personal data or conversational context), mechanisms are required to establish and verify identity, ensure confidentiality, integrity, authenticity of the exchanged data, selective disclosure and delegated authorization across AI Agent chains. This introduces new considerations around protocol-level security and privacy mechanisms.
 
-Since AI agents can operate independently, and their LLMs can hallucinate, including the hallucination of tool use. This introduces risk when an AI Agent erroneously performs actions on a user's behalf. Techniques for mitigation—primarily through verifiable user approvals are critical.
-
 The scope of the working group is agent-to-agent and agent-to-tools communication protocols. The working group will document common use-cases to derive requirements for the protocol.
 
 # Deliverables
