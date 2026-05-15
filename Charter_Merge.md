@@ -18,7 +18,7 @@ There are several considerations that are unique to AI Agent applications that n
 
 Since AI agents can operate independently, and their LLMs can hallucinate, including the hallucination of tool use. This introduces risk when an AI Agent erroneously performs actions on a user's behalf. Techniques for mitigation—primarily through verifiable user approvals are critical.
 
-The scope of the working group is agent-to-agent and agent-to-tools communication protocols. The working group will document common use-cases to derive requirements for the protocol.
+The scope of the working group is agent-to-agent and agent-to-tools communication protocols. The working group will document common use-cases to derive requirements for the protocol. Human-agent communication protocols — specifically the protocol-level mechanisms for establishing sessions, negotiating modalities, and exchanging multimodal data between a human user and an AI Agent — are in scope. 
 
 # Deliverables
 
@@ -87,6 +87,8 @@ The following topics are explicitly out of scope for this working group:
 - Standardization of agent behavior, decision-making, or planning semantics.
 
 - AI agent behavioral security (e.g., preventing the AI model itself from hallucinating, though mitigating the impact of hallucinations via protocol-level user confirmation is in scope).
+
+- The design of human to agent user interfaces, client application UX, or the rendering of agent outputs on end-user devices
 
 # TENTATIVE: (Depends on buy in from relevant open source communities)
 
