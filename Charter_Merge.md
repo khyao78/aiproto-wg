@@ -14,7 +14,7 @@ There are several considerations that are unique to AI Agent applications that n
 
 - Interactions of AI Agents with users, other AI Agents, and tools can be long-lived, utilize significant amounts of context across various modes (text, audio, video), and require very low latency (including fast barge/interruption times). This introduces new considerations around reliability, transport session management, and data transport.
 
-- To protect data exchanged between AI Agents (and between AI Agents and tools) over potentially untrusted networks, particularly when handling sensitive information (such as personal data or conversational context), mechanisms are required to establish and verify identity, ensure confidentiality, integrity, authenticity of the exchanged data, selective disclosure and delegated authorization across AI Agent chains. This introduces new considerations around protocol-level security and privacy mechanisms.
+- To protect data exchanged between AI Agents (and between AI Agents and tools) over potentially untrusted networks, particularly when handling sensitive information (such as personal data or conversational context), mechanisms are required to establish and verify identity, ensure confidentiality, integrity, authenticity of the exchanged data, and delegated authorization across AI Agent chains. This introduces new considerations around protocol-level security and privacy mechanisms.
 
 The scope of the working group is agent-to-agent and agent-to-tools communication protocols. The working group will document common use-cases to derive requirements for the protocol.
 
