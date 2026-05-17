@@ -24,7 +24,7 @@ The working group will produce the following standards track and informational d
 
 ## AI Agent Session Protocol (Standards Track)
 
-A standards-track protocoll for creation and maintenance of long-lived sessions between AI agents, or between AI agents and tools. These sessions allow for the bidirectional exchange of data, incuding model context, tool call results, and chat messages.
+A standards-track protocoll for creation and maintenance of long-lived sessions between AI agents, or between AI agents and tools. These sessions allow for the bidirectional exchange of data, including model context, tool call results, and chat messages.
 
 The session protocol will:
 
