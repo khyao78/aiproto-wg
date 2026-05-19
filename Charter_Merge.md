@@ -10,7 +10,7 @@ There are several considerations that are unique to AI Agent applications that n
 
 - AI Agents act as autonomous software entities that may need to be authenticated independently of the users they represent. Establishing verifiable agent identity that is distinct from user identity enables independent revocation of agent access, scoping of agent permissions to a subset of user permissions, and auditability of agent-initiated actions distinct from user-initiated actions.
 
-- AI Agents also possess unique and differentiated skills that play a significant role in supporting collaborative tasks, which brings new considerations for how these specialized capabilities can be leveraged to select AI agents, initiate communication, and facilitate cross-domain interactions even within enterprise networks and on the Internet.
+- AI Agents possess unique and specialized functional capabilities which can be enhanced by collaboratively working with other agents or tools. This brings new considerations for how these specialized capabilities can be leveraged to select collaborative AI agents or tools, initiate communication and maintain interactions, including across network boundaries.
 
 - Interactions of AI Agents with users, other AI Agents, and tools can be long-lived, utilize significant amounts of context across various modes (text, audio, video), and require very low latency (including fast barge/interruption times). This introduces new considerations around reliability, transport session management, and data transport.
 
