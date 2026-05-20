@@ -76,8 +76,6 @@ If the working group needs any changes to or extensions of protocols specified b
 
 The following topics are explicitly out of scope for this working group:
 
-- Discovery of AI agents
-    
 - Definition of AI models, agent reasoning algorithms, or tool-specific business logic.
 
 - Standardization of agent behavior, decision-making, or planning semantics.
