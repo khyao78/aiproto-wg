@@ -16,7 +16,7 @@ There are several considerations that are unique to AI Agent applications that n
 
 - To protect data exchanged between AI Agents (and between AI Agents and tools) over potentially untrusted networks, particularly when handling sensitive information (such as personal data or conversational context), mechanisms are required to establish and verify identity, ensure confidentiality, integrity, authenticity of the exchanged data, and delegated authorization across AI Agent chains. This introduces new considerations around protocol-level security and privacy mechanisms.
 
-The scope of the working group is agent-to-agent and agent-to-tools communication protocols. The working group will document common use-cases to derive requirements for the protocol.
+The scope of the working group includes agent-to-agent and agent-to-tools communication protocols. The working group will document common use-cases to derive requirements for these protocols. Human-agent communication protocols — specifically the protocol-level mechanisms for establishing sessions, negotiating modalities, and exchanging multimodal data between a human user and an AI Agent — are also in scope. 
 
 # Deliverables
 
@@ -83,6 +83,8 @@ The following topics are explicitly out of scope for this working group:
 - Standardization of agent behavior, decision-making, or planning semantics.
 
 - AI agent behavioral security (e.g., preventing the AI model itself from hallucinating, though mitigating the impact of hallucinations via protocol-level user confirmation is in scope).
+
+- The design of human to agent user interfaces, client application UX, or the rendering of agent outputs on end-user devices
 
 # TENTATIVE: (Depends on buy in from relevant open source communities)
 
