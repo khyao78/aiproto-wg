@@ -35,12 +35,6 @@ The session protocol will:
 
 This protocol is a expected to be a foundational building block on top of which additional protocols can be built. It is anticipated that the AI Agent session protocol will utilize modern IETF application transfer protocols, such as QUIC, webtransport, WebRTC or MOQ, based on the anticipated use cases. The protocol must also be usable by other application layer protocols with the appropriate layering and extension points enabling its adoption by any application. Examples of protocols that can utilize this include the existing defacto agent communication protocols such as the MCP and A2A protocols being worked on by the Linux Foundation.
 
-## AI Agent Authorization Framework (Standards Track)
-
-This deliverable focuses on defining the agent-specific integration framework: how existing and emerging OAuth mechanisms are composed and applied in AI agent scenarios, including the confirmation and evidence requirements described above. This profile will enable an AI Agent to create an independent identity, obtain and exchange access tokens with fine-grained, behavior-driven scopes bound to the specific operations that it is permitted to perform on behalf of the user. Unlike traditional OAuth scopes which enumerate static resource permissions, agent authorization must account for dynamic behavioral boundaries, including conditional and context-dependent privileges that may vary across interactions. The protocol needs to provide a way of requesting confirmation for operations that are about to be performed by AI agents.
-
-Any extensions to OAuth protocol mechanisms required to support agent authorization (e.g., new grant types, token structures, or authorization data types) are expected to be developed within the OAuth working group. Any extensions required to support establishment of an independent AI agent identity are expected to be developed within the wimse working group.
-
 ## AI Agent Protocol Framework (Standards Track)
 
 A standards-track framework document that identifies the key building blocks and defines the protocol suite for interoperable agent-to-agent and agent-to-tool communications. The document provides an architectural overview and highlights areas for subsequent protocol specification work.
@@ -52,6 +46,7 @@ The framework will:
 * Enable AI Agents to select and collaborate with other AI Agents on the Internet or intranet, deployed in various interconnected domains and ecosystems, to execute simple or complex tasks.
 * Allow multi-modal collaboration using varied data formats such as text, images, video, audio, and structured data with exchange of multi-modal contexts.
 * Describe the functional blocks, their relationships, and the mechanisms for structured, semi-structured, and multi-modal information exchange to support collaborative tasks across domains.
+* Enable an AI Agent to create an independent identity, obtain and exchange access tokens with fine-grained, behavior-driven scopes bound to the specific operations that it is permitted to perform on behalf of the user.
 * Identify the protocol suite covering session management, transport, security, and identity building blocks.
 
 ## Use Cases, Gap Analysis, and Requirements (Informational)
