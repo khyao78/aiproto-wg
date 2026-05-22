@@ -24,7 +24,7 @@ The working group will produce the following standards track and informational d
 
 ## AI Agent Session Protocol (Standards Track)
 
-A standards-track protocoll for creation and maintenance of long-lived sessions between AI agents, or between AI agents and tools. These sessions allow for the bidirectional exchange of data, including model context, tool call results, and chat messages.
+A standards-track protocol for creation and maintenance of communication sessions between AI agents, or between AI agents and tools. These sessions allow for the bidirectional exchange of data, including model context, tool call results, and chat messages.
 
 The session protocol will:
 
@@ -33,7 +33,7 @@ The session protocol will:
 * Support concurrent exchange of real-time data (such as voice and video), semi-real-time data (such as chat), and non-real-time data (such as tool call inputs and outputs).
 * Supports point-to-point and point-to-multipoint communication topologies. 
 
-This protocol is a expected to be a foundational building block on top of which additional protocols can be built. It is anticipated that the AI Agent session protocol will utilize modern IETF application transfer protocols, such as QUIC, webtransport, WebRTC or MOQ, based on the anticipated use cases. The protocol must also be usable by other application layer protocols with the appropriate layering and extension points enabling its adoption by any application. Examples of protocols that can utilize this include the existing defacto agent communication protocols such as the MCP and A2A protocols being worked on by the Linux Foundation.
+This protocol is expected to be a foundational building block on top of which additional protocols can be built. It is anticipated that the AI Agent session protocol will utilize modern IETF application transfer protocols, such as QUIC, WebTransport, WebRTC or MOQ, based on the anticipated use cases. The protocol must also be usable by other application layer protocols with the appropriate layering and extension points enabling its adoption by any application. Examples of protocols that can utilize this include the existing de facto standard agent communication protocols such as the MCP and A2A protocols being worked on by the Linux Foundation.
 
 ## AI Agent Protocol Framework (Standards Track)
 
@@ -54,8 +54,8 @@ The framework will:
 
 Foundational work will be documented through a set of informational Internet-Drafts covering:
 
-* **Use cases** focused on Agent-to-agent and Agent-to-tool communications, used to verify the suitability of the protocols developed.
-* **Gap analysis and requirements** based on examination of existing de facto protocols implemented in open-source projects, from which necessary protocol requirements are derived.
+* **Use cases** focused on Agent-to-agent and Agent-to-tool communications, used to verify the suitability of existing protocols and the protocols being developed.
+* **Gap analysis and requirements** based on examination of existing de facto standard protocols implemented in open-source projects, from which necessary protocol requirements are derived.
 
 # Coordination
 
