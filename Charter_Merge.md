@@ -20,7 +20,7 @@ The scope of the working group includes agent-to-agent and agent-to-tools commun
 
 # Deliverables
 
-The working group will produce the following standards track and informational documents:
+The working group will produce the following standards track and informational documents. The work on these deliverables is expected to proceed in parallel.
 
 ## AI Agent Session Protocol (Standards Track)
 
