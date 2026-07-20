@@ -20,7 +20,7 @@ The scope of the working group includes agent-to-agent and agent-to-tools commun
 
 # Deliverables
 
-The working group will produce the following standards track and informational documents:
+The working group will produce the following standards track and informational documents. The work on these deliverables is expected to proceed in parallel.
 
 ## AI Agent Session Protocol (Standards Track)
 
@@ -37,7 +37,7 @@ This protocol is expected to be a foundational building block on top of which ad
 
 ## AI Agent Protocol Framework (Standards Track)
 
-A standards-track framework document that identifies the key building blocks and defines the protocol suite for interoperable agent-to-agent and agent-to-tool communications. The document provides an architectural overview and highlights areas for subsequent protocol specification work.
+A standards-track framework that identifies the key building blocks and defines the protocol suite for interoperable agent-to-agent and agent-to-tool communications. The framework provides an architectural overview and highlights areas for subsequent protocol specification work.
 
 This is an evolving work item that can proceed in parallel with the development of specific protocol deliverables associated with the identified architectural blocks. It will iteratively integrate both existing and currently missing protocol building blocks in successive steps, until all core modules are fully incorporated.
 
@@ -47,8 +47,9 @@ The framework will:
 * Allow multi-modal collaboration using varied data formats such as text, images, video, audio, and structured data with exchange of multi-modal contexts.
 * Describe the functional blocks, their relationships, and the mechanisms for structured, semi-structured, and multi-modal information exchange to support collaborative tasks across domains.
 * Describe agent-specific integration for agent authentication and authorization about how existing and emerging  mechanisms are composed and applied in AI agent scenarios, including the confirmation and evidence requirements for AI agent operations.
-* Enable an AI Agent to create an independent identity, obtain and exchange access tokens with fine-grained, behavior-driven scopes bound to the specific operations that it is permitted to perform on behalf of the user. Agent authorization needs to account for dynamic behavioral boundaries, including conditional and context-dependent privileges that may vary across interactions and provide a way of requesting confirmation for operations that are about to be performed by AI agents.
+* Enable an AI Agent to create an independent identity, obtain and exchange access tokens with fine-grained, behavior-driven scopes bound to the specific operations that it is permitted to perform on behalf of the user. Agent authorization needs to account for dynamic behavioral boundaries, including conditional and context-dependent privileges that may vary across interactions and provide a way of requesting confirmation for operations that are about to be performed by AI agents. Any extensions to OAuth protocol mechanisms required to support agent authorization are expected to be developed within the OAuth working group. Any extensions required for independent AI agent identity are expected to be developed within the wimse working group.
 * Identify the protocol suite covering session management, transport, security, and identity building blocks.
+* The framework may be delivered as multiple standards-track documents, as the working group determines based on the structure and maturity of the building blocks.
 
 ## Use Cases, Gap Analysis, and Requirements (Informational)
 
@@ -71,8 +72,6 @@ If the working group needs any changes to or extensions of protocols specified b
 # Out of Scope
 
 The following topics are explicitly out of scope for this working group:
-
-- Discovery of AI agents
 
 - Implementation details of AI Agents, including definition of AI models, backend AI infrastructure network and protocols, agent reasoning algorithms, or tool-specific business logic.
 
